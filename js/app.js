@@ -6,6 +6,8 @@ xi=1;//inicia numero en pantalla
 coma=0;//punto decimal
 ni=0;//numero en espera
 op="no";//operacion en curso
+
+
 function numero(xx){//recoge numero pulsado
 	if(parseInt(x.length) < 8){
 			if(x=="0" || xi==1){
@@ -41,29 +43,31 @@ function operar(s){
 	xi=1;
 }
 function igual(){
-	if(parseInt(x.length) < 8){
 	if(op=="no"){
 		pantalla.innerHTML=x;
 	}
 	else{
 		sl=ni+op+x;//operacion de dos numeros en cadena
 		sol=eval(sl)//conversion de cadena
+		sol=sol.toString()//convierte dato a texto
+		sol=sol.substring(0,8)//reduce caracteres a 8
 		pantalla.innerHTML=sol//solucion
 		x=sol;//se guarda solucion
 		op="no";//no hay nada pendidente
 		xi=1;//
 	}
 }
-}
+
 
 function raiz(){
-	if(parseInt(x.length) < 8){
 	x=Math.sqrt(x)//opera raiz cuadrada
+	x=x.toString()//convierte dato a texto
+	x=x.substring(0,8)//reduce caracteres a 8
 	pantalla.innerHTML=x;//muesta resultado
 	op="no";
 	xi=1;
 }
-}
+
 function sign(){
 	nx=Number(x);//se pasa el dato de String a numero
 	nx=-nx;//se le agrega el negativo
@@ -72,11 +76,16 @@ function sign(){
 	xi=1;
 }
 function borradoTotal(){
-	if(parseInt(x.length) < 8){
 	pantalla.innerHTML=0;
 	x="0";
 	coma=0;
 	ni=0
 	op="no"
 }
-}
+
+var boton = document.getElementsByClassName('tecla');
+
+document.getElementsByClassName('tecla').addEventListener('click',function(tecla){	
+document.getElementsByClassName('tecla').style.transform="scale(0.9)";
+setTimeout(function() {document.getElementsByClassName('tecla').style.transform="scale(1)";}, 200);
+})
