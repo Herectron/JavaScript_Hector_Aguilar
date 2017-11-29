@@ -25,33 +25,33 @@
       </div>
 
       <div class="teclado">
-        <img src="image/ON.png" alt="On" class="tecla" id="on" onclick="borradoTotal()" />
-        <img src="image/sign.png" alt="signo" class="tecla" id="sign" onclick="sign()" />
-        <img src="image/raiz.png" alt="raiz" class="tecla" id="raiz" onclick="raiz()"/>
-        <img src="image/dividido.png" alt="dividido" class="tecla divide" id="dividido" onclick="operar('/')"  />
+        <img src="image/ON.png" onmousedown="abajo('on')" onmouseup="arriba('on')" alt="On" class="tecla" id="on" onclick="borradoTotal()" />
+        <img src="image/sign.png" onmousedown="abajo('sign')" onmouseup="arriba('sign')" alt="signo" class="tecla" id="sign" onclick="sign()" />
+        <img src="image/raiz.png" onmousedown="abajo('raiz')" onmouseup="arriba('raiz')" alt="raiz" class="tecla" id="raiz" onclick="raiz()"/>
+        <img src="image/dividido.png" onmousedown="abajo('dividido')" onmouseup="arriba('dividido')" alt="dividido" class="tecla divide" id="dividido" onclick="operar('/')"  />
 
-        <img src="image/7.png" alt="7" class="tecla" id="7" onclick="numero('7')" />
-        <img src="image/8.png" alt="8" class="tecla" id="8" onclick="numero('8')"/>
-        <img src="image/9.png" alt="9" class="tecla" id="9" onclick="numero('9')"/>
-        <img src="image/por.png" alt="por" class="tecla multiplica" id="por" onclick="operar('*')"/>
+        <img src="image/7.png" onmousedown="abajo('7')" onmouseup="arriba('7')" alt="7" class="tecla" id="7" onclick="numero('7')" />
+        <img src="image/8.png" onmousedown="abajo('8')" onmouseup="arriba('8')" alt="8" class="tecla" id="8" onclick="numero('8')"/>
+        <img src="image/9.png" onmousedown="abajo('9')" onmouseup="arriba('9')" alt="9" class="tecla" id="9" onclick="numero('9')"/>
+        <img src="image/por.png" onmousedown="abajo('por')" onmouseup="arriba('por')" alt="por" class="tecla multiplica" id="por" onclick="operar('*')"/>
 
-        <img src="image/4.png" alt="4" class="tecla" id="4" onclick="numero('4')"/>
-        <img src="image/5.png" alt="5" class="tecla" id="5" onclick="numero('5')"/>
-        <img src="image/6.png" alt="6" class="tecla" id="6" onclick="numero('6')"/>
-        <img src="image/menos.png" alt="menos" class="tecla resta" id="menos" onclick="operar('-')"/>
+        <img src="image/4.png" onmousedown="abajo('4')" onmouseup="arriba('4')" alt="4" class="tecla" id="4" onclick="numero('4')"/>
+        <img src="image/5.png" onmousedown="abajo('5')" onmouseup="arriba('5')" alt="5" class="tecla" id="5" onclick="numero('5')"/>
+        <img src="image/6.png" onmousedown="abajo('6')" onmouseup="arriba('6')" alt="6" class="tecla" id="6" onclick="numero('6')"/>
+        <img src="image/menos.png" onmousedown="abajo('menos')" onmouseup="arriba('menos')" alt="menos" class="tecla resta" id="menos" onclick="operar('-')"/>
 
         <div class="row">
           <div class="col1">
-            <img src="image/1.png" alt="1" class="tecla" id="1" onclick="numero('1')"/>
-            <img src="image/2.png" alt="2" class="tecla" id="2" onclick="numero('2')"/>
-            <img src="image/3.png" alt="3" class="tecla" id="3" onclick="numero('3')"/>
+            <img src="image/1.png" onmousedown="abajo('1')" onmouseup="arriba('1')" alt="1" class="tecla" id="1" onclick="numero('1') " />
+            <img src="image/2.png" onmousedown="abajo('2')" onmouseup="arriba('2')" alt="2" class="tecla" id="2" onclick="numero('2')"/>
+            <img src="image/3.png" onmousedown="abajo('3')" onmouseup="arriba('3')" alt="3" class="tecla" id="3" onclick="numero('3')"/>
 
-            <img src="image/0.png" alt="0" class="tecla" id="0" onclick="numero('0')"/>
-            <img src="image/punto.png" alt="punto" class="tecla" id="punto" onclick="numero('.')"/>
-            <img src="image/igual.png" alt="igual" class="tecla" id="igual" onclick="igual()"/>
+            <img src="image/0.png" onmousedown="abajo('0')" onmouseup="arriba('0')" alt="0" class="tecla" id="0" onclick="numero('0')"/>
+            <img src="image/punto.png" onmousedown="abajo('punto')" onmouseup="arriba('punto')" alt="punto" class="tecla" id="punto" onclick="numero('.')"/>
+            <img src="image/igual.png" onmousedown="abajo('igual')" onmouseup="arriba('igual')" alt="igual" class="tecla" id="igual" onclick="igual()"/>
           </div>
           <div class="col2">
-            <img src="image/mas.png" alt="mas" class="tecla suma" id="mas" onclick="operar('+')"/>
+            <img src="image/mas.png" onmousedown="abajo('mas')" onmouseup="arriba('mas')"  alt="mas" class="tecla suma" id="mas" onclick="operar('+')"/>
           </div>
 
         </div>

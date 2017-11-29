@@ -9,7 +9,7 @@ op="no";//operacion en curso
 
 
 function numero(xx){//recoge numero pulsado
-	if(parseInt(x.length) < 8){
+		if(parseInt(x.length) < 8){
 			if(x=="0" || xi==1){
 				pantalla.innerHTML=xx;//muestra dato
 				x=xx;//guarda numero
@@ -78,14 +78,15 @@ function sign(){
 function borradoTotal(){
 	pantalla.innerHTML=0;
 	x="0";
-	coma=0;
+	coma=0;//pasa todos los valores a 0
 	ni=0
 	op="no"
 }
 
-var boton = document.getElementsByClassName('tecla');
+function abajo(rr){
+document.getElementById(rr).setAttribute("style","transform:scale(0.95,0.95)")
+}
 
-document.getElementsByClassName('tecla').addEventListener('click',function(tecla){	
-document.getElementsByClassName('tecla').style.transform="scale(0.9)";
-setTimeout(function() {document.getElementsByClassName('tecla').style.transform="scale(1)";}, 200);
-})
+function arriba(rr){
+document.getElementById(rr).setAttribute("style","transform:scale(1,1)")
+}
